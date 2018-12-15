@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -51,19 +51,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameDebugMessageComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+  </ItemGroup>
+  <ItemGroup>
      <Compile Include="Assets\Libraries\DesperateDevs\Compile.cs" />
-     <Compile Include="Assets\Sources\Generated\Contexts.cs" />
-     <Compile Include="Assets\Sources\Generated\Feature.cs" />
-     <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
-     <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
-     <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
-     <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
-     <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
-     <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
-     <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
-     <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
-     <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
-     <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+     <Compile Include="Assets\Sources\Components\DebugMessageComponent.cs.cs" />
+     <Compile Include="Assets\Sources\GameController.cs" />
+     <Compile Include="Assets\Sources\Reactive Systems\DebugMessageSystem.cs" />
+     <Compile Include="Assets\Sources\Reactive Systems\HelloWorldSystem.cs" />
+     <Compile Include="Assets\Sources\Reactive Systems\TutorialSystem.cs" />
+     <None Include="Assets\SpaceShooterRedux\license.txt" />
+     <None Include="Assets\SpaceShooterRedux\Spritesheet\sheet.xml" />
      <None Include="Assets\Libraries\Entitas\Entitas.xml" />
      <None Include="Assets\Libraries\Entitas\LICENSE.txt" />
  <Reference Include="UnityEditor.StandardEvents">
