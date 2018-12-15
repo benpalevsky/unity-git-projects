@@ -21,8 +21,9 @@ public class GameController : MonoBehaviour
 
     }
 
-    private private Systems CreateSystems()
+    private Systems CreateSystems()
     {
+        //this creates our HelloWorldSystem under the "Game"
         return new Feature("Game").Add(new HelloWorldSystem());
     }
 }
