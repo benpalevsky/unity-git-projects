@@ -1,29 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Entitas;
 
-public class GameController : MonoBehaviour
-{
+public class GameController : MonoBehaviour {
+    private Systems _systems;
+    private GameEntity e;
+    public static GameContext context;
 
-    private Systems systems;
 
     // Use this for initialization
-    void Start()
-    {
-        systems = CreateSystems();
-        systems.Initialize();
+    private void Start() {
+        
+        context = new GameContext();
+
+        _systems = CreateHelloWorldSystem();
+        _systems.Initialize();
+        
+        
+        e = context.CreateEntity();
+        e.AddNumber(0);
+
+        _systems = CreateIncrementNumberSystem();
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
+        
+        _systems.Execute();
 
+        
     }
 
-    private Systems CreateSystems()
-    {
+
+    private static Systems CreateHelloWorldSystem() {
         //this creates our HelloWorldSystem under the "Game"
         return new Feature("Game").Add(new HelloWorldSystem());
+    }
+    
+    private static Systems CreateIncrementNumberSystem() {
+        //this creates our HelloWorldSystem under the "Game"
+        return new Feature("Game").Add(new IncrementNumberSystem());
     }
 }
