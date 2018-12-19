@@ -18,14 +18,14 @@ public class GameController : MonoBehaviour {
         e = context.CreateEntity();
         e.AddNumber(0);
 
-        _systems = CreateIncrementNumberSystem();
+        //_systems = CreateIncrementNumberSystem();
 
 
     }
 
     private void Update() {
         
-        _systems.Execute();
+        //_systems.Execute();
 
         
     }
