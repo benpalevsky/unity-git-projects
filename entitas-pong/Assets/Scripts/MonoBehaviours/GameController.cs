@@ -10,37 +10,26 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     private void Start() {
-
         var contexts = Contexts.sharedInstance;
-        var e1 = contexts.game.CreateEntity();
-        var e2 = contexts.game.CreateEntity();
-        
-        e1.AddGameSetup(gameSetup);
+
+        contexts.game.SetGameSetup(gameSetup);
+
 
         //make a new hello world system
         _systems = CreateHelloWorldSystem(contexts);
         //call the hello world function
         _systems.Initialize();
-        
-        
-        _systems = CreateAddNumberSystem(contexts);
-        
+
+        _systems = CreateInitializePlayerSystem(contexts);
         _systems.Initialize();
-
-
-    
-        //now it's an increment number system
-        //lets increment all entities with the increment number component
-        _systems = CreateIncrementNumberSystem(contexts);
-
-
+        
+        _systems = CreateInstantiateViewSystem(contexts);
+        _systems.Initialize();
     }
 
     private void Update() {
-        
-        _systems.Execute();
 
-        
+        _systems.Execute();
     }
 
 
@@ -48,18 +37,22 @@ public class GameController : MonoBehaviour {
         //this creates our HelloWorldSystem under the "Game"
         return new Feature("Game").Add(new HelloWorldSystem());
     }
-    
-    private static Systems CreateIncrementNumberSystem(Contexts contexts) {
+
+    private static Systems CreateInitializePlayerSystem(Contexts contexts) {
         //this creates our HelloWorldSystem under the "Game"
-        
-        return new Feature("Game").Add(new IncrementNumberSystem());
+        return new Feature("Game").Add(new InitializePlayerSystem(contexts));
     }
-    
-    
+
+    private static Systems CreateInstantiateViewSystem(Contexts contexts) {
+        //this creates our HelloWorldSystem under the "Game"
+
+        return new Feature("Game").Add(new InstantiateViewSystem(contexts));
+    }
+
+
     private static Systems CreateAddNumberSystem(Contexts contexts) {
         //this creates our HelloWorldSystem under the "Game"
-        
-        return new Feature("Game").Add(new AddNumberSystem());
 
+        return new Feature("Game").Add(new AddNumberSystem());
     }
 }

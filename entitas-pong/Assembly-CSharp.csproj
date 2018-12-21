@@ -55,6 +55,8 @@
     <Compile Include="Assets\Sources\Generated\Game\Components\GameGameSetupComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameNumberComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Components\GameSetupComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
     <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
@@ -68,11 +70,15 @@
     <Compile Include="Assets\Libraries\DesperateDevs\Compile.cs" />
     <Compile Include="Assets\Scripts\Components\NumberComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\ResourceComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\ViewComponent.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\GameController.cs" />
-    <Compile Include="Assets\Scripts\Reactive Systems\AddNumberSystem.cs" />
-    <Compile Include="Assets\Scripts\Reactive Systems\HelloWorldSystem.cs" />
-    <Compile Include="Assets\Scripts\Reactive Systems\IncrementNumberSystem.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GameSetup.cs" />
+    <Compile Include="Assets\Scripts\Systems\Initialization Systems\AddNumberSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Initialization Systems\HelloWorldSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Initialization Systems\IncrementNumberSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Initialization Systems\InitializePlayerSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Reactive Systems\InstantiateViewSystem.cs" />
     <None Include="Assets\SpaceShooterRedux\license.txt" />
     <None Include="Assets\SpaceShooterRedux\Spritesheet\sheet.xml" />
     <None Include="Assets\Libraries\Entitas\Entitas.xml" />

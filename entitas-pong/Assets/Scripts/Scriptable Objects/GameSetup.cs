@@ -6,5 +6,5 @@ using Entitas.CodeGeneration.Attributes;
 [Game, Unique]
 
 public class GameSetup : ScriptableObject {
-    public GameObject player;
+    public GameObject playerPrefab;
 }

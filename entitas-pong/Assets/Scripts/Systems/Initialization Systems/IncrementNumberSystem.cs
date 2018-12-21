@@ -7,7 +7,6 @@ public class IncrementNumberSystem : IExecuteSystem {
 
         foreach (var e in entities) {
             if (!e.hasNumber) return;
-            Debug.Log(e.number.x);
             e.number.x++;
         }
     }

@@ -26,17 +26,25 @@
           <e p="Components" t="Include">
             <e p="NumberComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
+            <e p="ResourceComponent.cs" t="Include" />
+            <e p="ViewComponent.cs" t="Include" />
           </e>
           <e p="MonoBehaviours" t="Include">
             <e p="GameController.cs" t="Include" />
           </e>
-          <e p="Reactive Systems" t="Include">
-            <e p="AddNumberSystem.cs" t="Include" />
-            <e p="HelloWorldSystem.cs" t="Include" />
-            <e p="IncrementNumberSystem.cs" t="Include" />
-          </e>
           <e p="Scriptable Objects" t="Include">
             <e p="GameSetup.cs" t="Include" />
+          </e>
+          <e p="Systems" t="Include">
+            <e p="Initialization Systems" t="Include">
+              <e p="AddNumberSystem.cs" t="Include" />
+              <e p="HelloWorldSystem.cs" t="Include" />
+              <e p="IncrementNumberSystem.cs" t="Include" />
+              <e p="InitializePlayerSystem.cs" t="Include" />
+            </e>
+            <e p="Reactive Systems" t="Include">
+              <e p="InstantiateViewSystem.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Sources" t="Include">
@@ -51,6 +59,8 @@
                 <e p="GameGameSetupComponent.cs" t="Include" />
                 <e p="GameNumberComponent.cs" t="Include" />
                 <e p="GamePlayerComponent.cs" t="Include" />
+                <e p="GameResourceComponent.cs" t="Include" />
+                <e p="GameViewComponent.cs" t="Include" />
               </e>
               <e p="GameAttribute.cs" t="Include" />
               <e p="GameComponentsLookup.cs" t="Include" />
