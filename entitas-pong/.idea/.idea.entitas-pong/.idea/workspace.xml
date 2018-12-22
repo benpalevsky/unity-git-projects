@@ -11,29 +11,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameController.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="300">
+              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
               <folding>
-                <marker date="1545419521000" expanded="false" signature="6:73" ph="..." />
-                <marker date="1545419521000" expanded="true" signature="246:704" ph="{...}" />
-                <marker date="1545419521000" expanded="true" signature="732:825" ph="{...}" />
-                <marker date="1545419521000" expanded="true" signature="897:1029" ph="{...}" />
-                <marker date="1545419521000" expanded="true" signature="1106:1252" ph="{...}" />
-                <marker date="1545419521000" expanded="true" signature="1328:1474" ph="{...}" />
-                <marker date="1545419521000" expanded="true" signature="1545:1677" ph="{...}" />
+                <marker date="1545505005000" expanded="false" signature="6:73" ph="..." />
+                <marker date="1545505005000" expanded="true" signature="119:714" ph="{...}" />
+                <marker date="1545505005000" expanded="true" signature="246:629" ph="{...}" />
+                <marker date="1545505005000" expanded="true" signature="657:712" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InitializePlayerSystem.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InitializePlayerSystem.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Initialization Systems/InitializePlayerSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <marker date="1545250886000" expanded="true" signature="72:415" ph="{...}" />
                 <marker date="1545250886000" expanded="true" signature="183:220" ph="{...}" />
@@ -46,18 +43,19 @@
       <file leaf-file-name="InstantiateViewSystem.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Reactive Systems/InstantiateViewSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="420">
+              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding>
-                <marker date="1545419754000" expanded="true" signature="6:88" ph="..." />
-                <marker date="1545419754000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
-                <marker date="1545419754000" expanded="true" signature="336:373" ph="{...}" />
-                <marker date="1545419754000" expanded="true" signature="521:653" ph="{...}" />
-                <marker date="1545419754000" expanded="true" signature="709:751" ph="{...}" />
-                <marker date="1545419754000" expanded="true" signature="762:825" ph="/* this is execute for a reactive system ... */" />
-                <marker date="1545419754000" expanded="true" signature="889:1352" ph="{...}" />
-                <marker date="1545419754000" expanded="true" signature="962:1346" ph="{...}" />
-                <marker date="1545419754000" expanded="true" signature="1164:1271" ph="/* add the view component (which is just a prefab reference) ... */" />
+                <marker date="1545505929000" expanded="false" signature="6:88" ph="..." />
+                <marker date="1545505929000" expanded="true" signature="154:1298" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
+                <marker date="1545505929000" expanded="true" signature="336:373" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="521:653" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="709:751" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="767:830" ph="/* this is execute for a reactive system ... */" />
+                <marker date="1545505929000" expanded="true" signature="894:1296" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="941:1290" ph="{...}" />
+                <marker date="1545505929000" expanded="true" signature="1110:1217" ph="/* add the view component (which is just a prefab reference) ... */" />
               </folding>
             </state>
           </provider>
@@ -66,21 +64,12 @@
       <file leaf-file-name="HelloWorldSystem.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Initialization Systems/HelloWorldSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="26" />
               <folding>
+                <marker date="1545082363000" expanded="true" signature="66:163" ph="{...}" />
                 <marker date="1545082363000" expanded="true" signature="102:155" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityLinkExtension.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7F23F52E-3253-435F-BEDB-E343970697E8/91/6a20222d/EntityLinkExtension.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -116,18 +105,6 @@
               <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <marker date="1545250681000" expanded="false" signature="6:59" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberComponent.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/NumberComponent.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-              <folding>
-                <marker date="1545082056000" expanded="true" signature="65:86" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -181,8 +158,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/ViewComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/GameSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Reactive Systems/InitializePlayerSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Initialization Systems/InitializePlayerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Reactive Systems/InstantiateViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameController.cs" />
       </list>
     </option>
   </component>
@@ -261,12 +239,12 @@
       <updated>1545166118157</updated>
       <workItem from="1545166124244" duration="1557000" />
       <workItem from="1545236175164" duration="8469000" />
-      <workItem from="1545504256241" duration="179000" />
+      <workItem from="1545504256241" duration="1620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10205000" />
+    <option name="totallyTimeSpent" value="11646000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,13 +321,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1545419521000" expanded="false" signature="6:73" ph="..." />
-            <marker date="1545419521000" expanded="true" signature="246:704" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="732:825" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="897:1029" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1106:1252" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1328:1474" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1545:1677" ph="{...}" />
+            <marker date="1545505005000" expanded="false" signature="6:73" ph="..." />
+            <marker date="1545505005000" expanded="true" signature="119:714" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="246:629" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="657:712" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -371,15 +346,16 @@
         <state relative-caret-position="435">
           <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
-            <marker date="1545419754000" expanded="true" signature="6:88" ph="..." />
-            <marker date="1545419754000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
-            <marker date="1545419754000" expanded="true" signature="336:373" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="521:653" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="709:751" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="762:825" ph="/* this is execute for a reactive system ... */" />
-            <marker date="1545419754000" expanded="true" signature="889:1352" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="962:1346" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="1164:1271" ph="/* add the view component (which is just a prefab reference) ... */" />
+            <marker date="1545505929000" expanded="false" signature="6:88" ph="..." />
+            <marker date="1545505929000" expanded="true" signature="154:1298" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
+            <marker date="1545505929000" expanded="true" signature="336:373" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="521:653" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="709:751" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="767:830" ph="/* this is execute for a reactive system ... */" />
+            <marker date="1545505929000" expanded="true" signature="894:1296" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="941:1290" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="1110:1217" ph="/* add the view component (which is just a prefab reference) ... */" />
           </folding>
         </state>
       </provider>
@@ -389,6 +365,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <marker date="1545082363000" expanded="true" signature="66:163" ph="{...}" />
             <marker date="1545082363000" expanded="true" signature="102:155" ph="{...}" />
           </folding>
         </state>
@@ -455,13 +432,10 @@
         <state relative-caret-position="240">
           <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
-            <marker date="1545419521000" expanded="false" signature="6:73" ph="..." />
-            <marker date="1545419521000" expanded="true" signature="246:704" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="732:825" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="897:1029" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1106:1252" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1328:1474" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1545:1677" ph="{...}" />
+            <marker date="1545505005000" expanded="false" signature="6:73" ph="..." />
+            <marker date="1545505005000" expanded="true" signature="119:714" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="246:629" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="657:712" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -596,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/34A3F97E-0DC4-4991-A02B-B393FFE46292/0c/b12e3d50/Systems.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -610,58 +577,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/34A3F97E-0DC4-4991-A02B-B393FFE46292/0c/b12e3d50/Systems.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Initialization Systems/HelloWorldSystem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="26" />
           <folding>
+            <marker date="1545082363000" expanded="true" signature="66:163" ph="{...}" />
             <marker date="1545082363000" expanded="true" signature="102:155" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <marker date="1545419521000" expanded="false" signature="6:73" ph="..." />
-            <marker date="1545419521000" expanded="true" signature="246:704" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="732:825" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="897:1029" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1106:1252" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1328:1474" ph="{...}" />
-            <marker date="1545419521000" expanded="true" signature="1545:1677" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Reactive Systems/InstantiateViewSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding>
-            <marker date="1545419754000" expanded="true" signature="6:88" ph="..." />
-            <marker date="1545419754000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
-            <marker date="1545419754000" expanded="true" signature="336:373" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="521:653" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="709:751" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="762:825" ph="/* this is execute for a reactive system ... */" />
-            <marker date="1545419754000" expanded="true" signature="889:1352" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="962:1346" ph="{...}" />
-            <marker date="1545419754000" expanded="true" signature="1164:1271" ph="/* add the view component (which is just a prefab reference) ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Initialization Systems/InitializePlayerSystem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <marker date="1545250886000" expanded="true" signature="72:415" ph="{...}" />
             <marker date="1545250886000" expanded="true" signature="183:220" ph="{...}" />
             <marker date="1545250886000" expanded="true" signature="251:413" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Reactive Systems/InstantiateViewSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <marker date="1545505929000" expanded="false" signature="6:88" ph="..." />
+            <marker date="1545505929000" expanded="true" signature="154:1298" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="193:261" ph="/* what does :base(context) mean? ... */" />
+            <marker date="1545505929000" expanded="true" signature="336:373" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="521:653" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="709:751" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="767:830" ph="/* this is execute for a reactive system ... */" />
+            <marker date="1545505929000" expanded="true" signature="894:1296" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="941:1290" ph="{...}" />
+            <marker date="1545505929000" expanded="true" signature="1110:1217" ph="/* add the view component (which is just a prefab reference) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <marker date="1545505005000" expanded="false" signature="6:73" ph="..." />
+            <marker date="1545505005000" expanded="true" signature="119:714" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="246:629" ph="{...}" />
+            <marker date="1545505005000" expanded="true" signature="657:712" ph="{...}" />
           </folding>
         </state>
       </provider>

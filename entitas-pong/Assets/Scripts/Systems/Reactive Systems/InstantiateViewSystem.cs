@@ -22,27 +22,20 @@ public class InstantiateViewSystem : ReactiveSystem<GameEntity> {
     protected override bool Filter(GameEntity entity) {
         return entity.hasResource;
     }
+    
 
     
     //this is execute for a reactive system
     //gets called when 
     protected override void Execute(List<GameEntity> entities) {
         
-        Debug.Log("hey");
         foreach (var e in entities) {
             //straight up unity method here
             var gameObject = e.resource.prefab;
-            Debug.Log("hi");
-
-
             var instance = GameObject.Instantiate(gameObject);
-
-
             //add the view component (which is just a prefab reference) 
             //and link Entitas with the Prefab
-
             instance.Link(e);
-
             e.AddView(instance);
         }
     }

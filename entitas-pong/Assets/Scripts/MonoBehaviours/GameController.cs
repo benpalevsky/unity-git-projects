@@ -14,47 +14,18 @@ public class GameController : MonoBehaviour {
 
         contexts.game.SetGameSetup(gameSetup);
 
+        _systems = new Feature("Game");
+
 
         //make a new hello world system
-        _systems = CreateHelloWorldSystem(contexts);
-        //call the hello world function
-        _systems.Initialize();
+        _systems.Add(new HelloWorldSystem());
+        _systems.Add(new InitializePlayerSystem(contexts));
+        _systems.Add(new InstantiateViewSystem(contexts));
 
-        _systems = CreateInitializePlayerSystem(contexts);
-        _systems.Initialize();
-        
-        _systems = CreateInstantiateViewSystem(contexts);
         _systems.Initialize();
     }
 
     private void Update() {
         var contexts = Contexts.sharedInstance;
-
-        _systems.Execute();
-        
-    }
-
-
-    private static Systems CreateHelloWorldSystem(Contexts contexts) {
-        //this creates our HelloWorldSystem under the "Game"
-        return new Feature("Game").Add(new HelloWorldSystem());
-    }
-
-    private static Systems CreateInitializePlayerSystem(Contexts contexts) {
-        //this creates our HelloWorldSystem under the "Game"
-        return new Feature("Game").Add(new InitializePlayerSystem(contexts));
-    }
-
-    private static Systems CreateInstantiateViewSystem(Contexts contexts) {
-        //this creates our HelloWorldSystem under the "Game"
-
-        return new Feature("Game").Add(new InstantiateViewSystem(contexts));
-    }
-
-
-    private static Systems CreateAddNumberSystem(Contexts contexts) {
-        //this creates our HelloWorldSystem under the "Game"
-
-        return new Feature("Game").Add(new AddNumberSystem());
     }
 }
