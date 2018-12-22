@@ -11,12 +11,18 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     private void Start() {
         var contexts = Contexts.sharedInstance;
-
+        
+                
+        contexts.game.CreateEntity().AddPosition(-3,8);
+        
+        Debug.Log(contexts.game.GetEntities()[0].position.x);
+        Debug.Log(contexts.game.GetEntities()[0].position.y);
+        
         contexts.game.SetGameSetup(gameSetup);
 
         _systems = new Feature("Game");
 
-
+        
         //make a new hello world system
         _systems.Add(new HelloWorldSystem());
         _systems.Add(new InitializePlayerSystem(contexts));

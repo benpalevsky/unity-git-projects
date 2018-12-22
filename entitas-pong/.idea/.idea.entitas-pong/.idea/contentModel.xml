@@ -26,6 +26,7 @@
           <e p="Components" t="Include">
             <e p="NumberComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
+            <e p="PositionComponent.cs" t="Include" />
             <e p="ResourceComponent.cs" t="Include" />
             <e p="ViewComponent.cs" t="Include" />
           </e>
@@ -59,6 +60,7 @@
                 <e p="GameGameSetupComponent.cs" t="Include" />
                 <e p="GameNumberComponent.cs" t="Include" />
                 <e p="GamePlayerComponent.cs" t="Include" />
+                <e p="GamePositionComponent.cs" t="Include" />
                 <e p="GameResourceComponent.cs" t="Include" />
                 <e p="GameViewComponent.cs" t="Include" />
               </e>

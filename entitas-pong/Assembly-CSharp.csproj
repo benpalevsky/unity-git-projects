@@ -55,6 +55,7 @@
     <Compile Include="Assets\Libraries\DesperateDevs\Compile.cs" />
     <Compile Include="Assets\Scripts\Components\NumberComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\PositionComponent.cs" />
     <Compile Include="Assets\Scripts\Components\ResourceComponent.cs" />
     <Compile Include="Assets\Scripts\Components\ViewComponent.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\GameController.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Sources\Generated\Game\Components\GameGameSetupComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameNumberComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GamePositionComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
