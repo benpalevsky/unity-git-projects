@@ -8,30 +8,29 @@ public class GameController : MonoBehaviour {
 
     public GameSetup gameSetup;
 
-    public GameObject Instance;
+    public GameObject instance;
 
     public GameEntity entity;
 
     // Use this for initialization
     private void Start() {
         var contexts = Contexts.sharedInstance;
-                
+
         entity = contexts.game.CreateEntity();
 
         entity.AddPosition(-3, 0);
-        
-        
+
+
         contexts.game.SetGameSetup(gameSetup);
-        
+
         contexts.game.GetEntities()[0].AddResource(gameSetup.playerPrefab);
 
-        Instance = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
-        
+        instance = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
 
 
         _systems = new Feature("Game");
 
-        
+
         //make a new hello world system
         _systems.Add(new HelloWorldSystem());
         _systems.Add(new InitializePlayerSystem(contexts));
@@ -41,11 +40,13 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
-
         entity.position.x += 0.01f;
-        Instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
+        instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
 
-
-
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            Debug.Log("hiiii");
+        } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            Debug.Log("heyyyy");
+        }
     }
 }
