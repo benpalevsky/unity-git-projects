@@ -28,8 +28,10 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
+        var contexts = Contexts.sharedInstance;
 
         _systems.Execute();
+        
     }
 
 

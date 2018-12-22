@@ -52,21 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameNumberComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Components\GameSetupComponent.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
-    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
-    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
-    <Compile Include="Assets\Sources\Generated\Feature.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Libraries\DesperateDevs\Compile.cs" />
     <Compile Include="Assets\Scripts\Components\NumberComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerComponent.cs" />
@@ -79,6 +64,19 @@
     <Compile Include="Assets\Scripts\Systems\Initialization Systems\IncrementNumberSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Initialization Systems\InitializePlayerSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Reactive Systems\InstantiateViewSystem.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\GameSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameGameSetupComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameNumberComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
     <None Include="Assets\SpaceShooterRedux\license.txt" />
     <None Include="Assets\SpaceShooterRedux\Spritesheet\sheet.xml" />
     <None Include="Assets\Libraries\Entitas\Entitas.xml" />

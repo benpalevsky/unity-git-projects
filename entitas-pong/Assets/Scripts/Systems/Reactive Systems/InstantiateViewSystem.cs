@@ -6,7 +6,6 @@ using UnityEngine;
 public class InstantiateViewSystem : ReactiveSystem<GameEntity> {
     private Contexts _contexts;
 
-
     //what does :base(context) mean?
     //constructor looks a bit weird
     public InstantiateViewSystem(Contexts contexts) : base(contexts.game) {
@@ -16,7 +15,7 @@ public class InstantiateViewSystem : ReactiveSystem<GameEntity> {
 
     //tells Entitas which component events can be handled
     protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context) {
-        //don't understand this line
+        //this line tells the reactive system when to activate
         return context.CreateCollector(GameMatcher.Resource);
     }
 
@@ -24,10 +23,13 @@ public class InstantiateViewSystem : ReactiveSystem<GameEntity> {
         return entity.hasResource;
     }
 
+    
+    //this is execute for a reactive system
+    //gets called when 
     protected override void Execute(List<GameEntity> entities) {
         
         Debug.Log("hey");
-        foreach (var e in _contexts.game.GetEntities()) {
+        foreach (var e in entities) {
             //straight up unity method here
             var gameObject = e.resource.prefab;
             Debug.Log("hi");
