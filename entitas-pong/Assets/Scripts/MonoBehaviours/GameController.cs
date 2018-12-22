@@ -1,4 +1,5 @@
-﻿using System.Runtime.Remoting.Contexts;
+﻿using System.ComponentModel.Design.Serialization;
+using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using Entitas;
 
@@ -7,18 +8,26 @@ public class GameController : MonoBehaviour {
 
     public GameSetup gameSetup;
 
+    public GameObject Instance;
+
+    public GameEntity entity;
 
     // Use this for initialization
     private void Start() {
         var contexts = Contexts.sharedInstance;
-        
                 
-        contexts.game.CreateEntity().AddPosition(-3,8);
+        entity = contexts.game.CreateEntity();
+
+        entity.AddPosition(-3, 0);
         
-        Debug.Log(contexts.game.GetEntities()[0].position.x);
-        Debug.Log(contexts.game.GetEntities()[0].position.y);
         
         contexts.game.SetGameSetup(gameSetup);
+        
+        contexts.game.GetEntities()[0].AddResource(gameSetup.playerPrefab);
+
+        Instance = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
+        
+
 
         _systems = new Feature("Game");
 
@@ -32,6 +41,11 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
-        var contexts = Contexts.sharedInstance;
+
+        entity.position.x += 0.01f;
+        Instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
+
+
+
     }
 }
