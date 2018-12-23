@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Entitas;
 
 public class GameController : MonoBehaviour {
@@ -13,6 +14,9 @@ public class GameController : MonoBehaviour {
     public GameEntity p1entity;
     public GameEntity p2entity;
     public GameEntity ballEntity;
+    
+    public float i = 0;
+
 
     // Use this for initialization
     private void Start() {
@@ -67,6 +71,13 @@ public class GameController : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.S)) {
             p2entity.velocity.vy -= 0.1f;
         }
+        
+        
+        if (ballGameObj.GetComponent<BoxCollider2D>().IsTouching(p2gameObj.GetComponent<BoxCollider2D>())
+            || ballGameObj.GetComponent<BoxCollider2D>().IsTouching(p1gameObj.GetComponent<BoxCollider2D>())) {
+            ballEntity.velocity.vx = -0.1f;
+            Debug.Log(i++);
+        }
 
         p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
         p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
@@ -76,10 +87,9 @@ public class GameController : MonoBehaviour {
         
         
         _systems.Execute();
+  
 
-        if (ballGameObj.GetComponent<BoxCollider2D>().IsTouching(p2gameObj.GetComponent<BoxCollider2D>())) {
-            Debug.Log("Hello");
-        }
+
     }
     
 }
