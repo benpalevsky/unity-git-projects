@@ -14,6 +14,7 @@ public class AddVelocityToPositionSystem : IExecuteSystem {
         ).GetEntities();
 
         foreach (var e in entities) {
+            e.position.x += e.velocity.vx;
             e.position.y += e.velocity.vy;
         }
     }
