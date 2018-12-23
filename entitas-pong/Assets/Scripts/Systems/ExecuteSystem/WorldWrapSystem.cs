@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using UnityEngine;
 
-public class ZebraSystem : IExecuteSystem {
+public class WorldWrapSystem : IExecuteSystem {
 
     private GameContext gameContext;
 
