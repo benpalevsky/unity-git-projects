@@ -21,8 +21,6 @@ public class GameController : MonoBehaviour {
         p1entity = contexts.game.CreateEntity();
         p2entity = contexts.game.CreateEntity();
 
-        p1entity.AddPosition(0, 0);
-        p2entity.AddPosition(0, 0);
 
 
         contexts.game.SetGameSetup(gameSetup);
@@ -32,6 +30,9 @@ public class GameController : MonoBehaviour {
 
         p1gameObj = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
         p2gameObj = Instantiate(contexts.game.GetEntities()[1].resource.prefab);
+        
+        p1entity.AddPosition(p1gameObj.transform.position.x, 0);
+        p2entity.AddPosition(p2gameObj.transform.position.x, 0);
 
 
         _systems = new Feature("Game");
