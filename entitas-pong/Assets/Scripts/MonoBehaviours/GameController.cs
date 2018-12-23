@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour {
         _systems.Add(new HelloWorldSystem());
         _systems.Add(new InitializePlayerSystem(contexts));
         _systems.Add(new UpdatePositionSystem(contexts));
+        _systems.Add(new ZebraSystem(contexts));
 
         _systems.Initialize();
     }

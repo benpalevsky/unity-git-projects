@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\MonoBehaviours\GameController.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GameSetup.cs" />
     <Compile Include="Assets\Scripts\Systems\ExecuteSystem\UpdatePositionSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\ExecuteSystem\ZebraSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Initialization Systems\AddNumberSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Initialization Systems\HelloWorldSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Initialization Systems\IncrementNumberSystem.cs" />
