@@ -38,8 +38,8 @@ public class GameController : MonoBehaviour {
         //make a new hello world system
         _systems.Add(new HelloWorldSystem());
         _systems.Add(new InitializePlayerSystem(contexts));
-        _systems.Add(new UpdatePositionSystem(contexts));
-        _systems.Add(new ZebraSystem(contexts));
+        _systems.Add(new AddVelocityToPositionSystem(contexts));
+        _systems.Add(new WorldWrapSystem(contexts));
 
         _systems.Initialize();
     }

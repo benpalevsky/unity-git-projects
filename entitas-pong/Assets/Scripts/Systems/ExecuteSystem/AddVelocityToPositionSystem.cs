@@ -1,10 +1,10 @@
 ﻿using Entitas;
 
-public class UpdatePositionSystem : IExecuteSystem {
+public class AddVelocityToPositionSystem : IExecuteSystem {
 
     private GameContext gameContext;
     
-    public UpdatePositionSystem(Contexts _contexts) {
+    public AddVelocityToPositionSystem(Contexts _contexts) {
         gameContext = _contexts.game;
     }
     

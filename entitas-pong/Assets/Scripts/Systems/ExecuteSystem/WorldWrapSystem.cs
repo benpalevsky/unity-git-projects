@@ -5,7 +5,7 @@ public class WorldWrapSystem : IExecuteSystem {
 
     private GameContext gameContext;
 
-    public ZebraSystem(Contexts _contexts) {
+    public WorldWrapSystem(Contexts _contexts) {
         gameContext = _contexts.game;
     }
     
