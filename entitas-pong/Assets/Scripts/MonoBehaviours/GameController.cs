@@ -8,10 +8,11 @@ public class GameController : MonoBehaviour {
 
     public GameObject p1gameObj;
     public GameObject p2gameObj;
+    public GameObject ballGameObj;
 
     public GameEntity p1entity;
     public GameEntity p2entity;
-    public GameEntity ball;
+    public GameEntity ballEntity;
 
     // Use this for initialization
     private void Start() {
@@ -29,10 +30,11 @@ public class GameController : MonoBehaviour {
         p2entity.AddPosition(p2gameObj.transform.position.x, 0);
         p2entity.AddVelocity(0, 0);
 
-        ball = contexts.game.CreateEntity();
-        ball.AddResource(gameSetup.ball);
-        ball.AddPosition(0,0);
-        ball.AddVelocity(0.1f , 0.1f);
+        ballEntity = contexts.game.CreateEntity();
+        ballEntity.AddResource(gameSetup.ball);
+        ballGameObj = Instantiate(ballEntity.resource.prefab);
+        ballEntity.AddPosition(0,0);
+        ballEntity.AddVelocity(0.1f , 0.1f);
         
 
 
