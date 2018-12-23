@@ -12,6 +12,6 @@ public class InitializePlayerSystem : IInitializeSystem {
     public void Initialize() {
         var entity = contexts.game.CreateEntity();
         entity.isPlayer = true;
-        entity.AddResource(contexts.game.gameSetup.value.playerPrefab);
+        entity.AddResource(contexts.game.gameSetup.value.player1);
     }
 }

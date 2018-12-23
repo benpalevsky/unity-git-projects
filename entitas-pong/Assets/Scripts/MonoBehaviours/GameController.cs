@@ -8,24 +8,30 @@ public class GameController : MonoBehaviour {
 
     public GameSetup gameSetup;
 
-    public GameObject instance;
+    public GameObject p1gameObj;
+    public GameObject p2gameObj;
 
-    public GameEntity entity;
+    public GameEntity p1entity;
+    public GameEntity p2entity;
 
     // Use this for initialization
     private void Start() {
         var contexts = Contexts.sharedInstance;
 
-        entity = contexts.game.CreateEntity();
+        p1entity = contexts.game.CreateEntity();
+        p2entity = contexts.game.CreateEntity();
 
-        entity.AddPosition(0, 0);
+        p1entity.AddPosition(0, 0);
+        p2entity.AddPosition(0, 0);
 
 
         contexts.game.SetGameSetup(gameSetup);
 
-        contexts.game.GetEntities()[0].AddResource(gameSetup.playerPrefab);
+        contexts.game.GetEntities()[0].AddResource(gameSetup.player1);
+        contexts.game.GetEntities()[1].AddResource(gameSetup.player2);
 
-        instance = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
+        p1gameObj = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
+        p2gameObj = Instantiate(contexts.game.GetEntities()[1].resource.prefab);
 
 
         _systems = new Feature("Game");
@@ -41,12 +47,12 @@ public class GameController : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            entity.position.y += 0.5f;
-            instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
+            p1entity.position.y += 0.5f;
+            p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            entity.position.y -= 0.5f;
-            instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
+            p1entity.position.y -= 0.5f;
+            p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
         }
     }
 }
