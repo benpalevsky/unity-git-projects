@@ -22,24 +22,16 @@ public class GameController : MonoBehaviour {
         p1entity.AddResource(gameSetup.player1);
         p1gameObj = Instantiate(p1entity.resource.prefab);
         p1entity.AddPosition(p1gameObj.transform.position.x, 0);
-        p1entity.AddVelocity(0,0);
-        
+        p1entity.AddVelocity(0, 0);
+
         p2entity = contexts.game.CreateEntity();
         p2entity.AddResource(gameSetup.player2);
         p2gameObj = Instantiate(p2entity.resource.prefab);
         p2entity.AddPosition(p2gameObj.transform.position.x, 0);
-        p2entity.AddVelocity(0,0);
-        
-
+        p2entity.AddVelocity(0, 0);
 
 
         contexts.game.SetGameSetup(gameSetup);
-
-
-
-
-       
-       
 
 
         _systems = new Feature("Game");
@@ -55,21 +47,23 @@ public class GameController : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            p1entity.position.y += 0.5f;
-            p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
+            p1entity.velocity.vy += 0.1f;
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            p1entity.position.y -= 0.5f;
-            p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
+            p1entity.velocity.vy -= 0.1f;
         }
-        
+
         if (Input.GetKeyDown(KeyCode.W)) {
-            p2entity.position.y += 0.5f;
-            p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
+            p2entity.velocity.vy += 0.1f;
         }
         else if (Input.GetKeyDown(KeyCode.S)) {
-            p2entity.position.y -= 0.5f;
-            p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
+            p2entity.velocity.vy -= 0.1f;
         }
+
+        p1entity.position.y += p1entity.velocity.vy;
+        p2entity.position.y += p2entity.velocity.vy;
+
+        p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
+        p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
     }
 }
