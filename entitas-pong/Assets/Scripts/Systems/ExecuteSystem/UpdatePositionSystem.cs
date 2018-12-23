@@ -1,19 +1,20 @@
 ﻿using Entitas;
 
 public class UpdatePositionSystem : IExecuteSystem {
-    
-    private Contexts contexts;
-    private GameEntity p1entity;
-    private GameEntity p2entity;
+
+    private GameContext gameContext;
     
     public UpdatePositionSystem(Contexts _contexts) {
-        contexts = _contexts;
-        p1entity = contexts.game.GetEntities()[0];
-        p2entity = contexts.game.GetEntities()[1];
+        gameContext = _contexts.game;
     }
     
     public void Execute() {
-        p1entity.position.y += p1entity.velocity.vy;
-        p2entity.position.y += p2entity.velocity.vy;
+        var entities = gameContext.GetGroup(
+            GameMatcher.AllOf(GameMatcher.Position, GameMatcher.Velocity)
+        ).GetEntities();
+
+        foreach (var e in entities) {
+            e.position.y += e.velocity.vy;
+        }
     }
 }
