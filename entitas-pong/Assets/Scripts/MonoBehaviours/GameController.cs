@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
         ballEntity.AddResource(gameSetup.ball);
         ballGameObj = Instantiate(ballEntity.resource.prefab);
         ballEntity.AddPosition(0,0);
-        ballEntity.AddVelocity(0.1f , 0.1f);
+        ballEntity.AddVelocity(0.05f , 0);
         
 
 
@@ -72,6 +72,14 @@ public class GameController : MonoBehaviour {
         p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
         ballGameObj.transform.position = new Vector3(ballEntity.position.x, ballEntity.position.y, 0);
         
+        
+        
+        
         _systems.Execute();
+
+        if (ballGameObj.GetComponent<BoxCollider2D>().IsTouching(p2gameObj.GetComponent<BoxCollider2D>())) {
+            Debug.Log("Hello");
+        }
     }
+    
 }

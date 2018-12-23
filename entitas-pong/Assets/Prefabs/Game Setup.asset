@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1706577838637192, guid: 88fce94cb953d40ea93ac243b94ff04d, type: 2}
   player2: {fileID: 1706577838637192, guid: b51a2b0cbdb2f4c129afe304cdab8bf3, type: 2}
+  ball: {fileID: 1706577838637192, guid: 381c25475cd6f42a289b892baa3ae954, type: 2}

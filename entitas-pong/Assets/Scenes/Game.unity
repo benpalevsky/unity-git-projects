@@ -143,6 +143,7 @@ MonoBehaviour:
   gameSetup: {fileID: 11400000, guid: 9ee0e33bffc99483dbaf08e03b04a858, type: 2}
   p1gameObj: {fileID: 0}
   p2gameObj: {fileID: 0}
+  ballGameObj: {fileID: 0}
 --- !u!4 &1886711657
 Transform:
   m_ObjectHideFlags: 0
