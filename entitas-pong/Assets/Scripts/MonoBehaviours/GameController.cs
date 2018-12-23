@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour {
 
         entity = contexts.game.CreateEntity();
 
-        entity.AddPosition(-3, 0);
+        entity.AddPosition(0, 0);
 
 
         contexts.game.SetGameSetup(gameSetup);
@@ -40,13 +40,13 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
-        entity.position.x += 0.01f;
-        instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
-
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            Debug.Log("hiiii");
-        } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            Debug.Log("heyyyy");
+            entity.position.x -= 0.5f;
+            instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            entity.position.x += 0.5f;
+            instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
         }
     }
 }
