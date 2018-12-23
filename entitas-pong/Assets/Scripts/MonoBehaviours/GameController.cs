@@ -40,12 +40,12 @@ public class GameController : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            entity.position.x -= 0.5f;
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            entity.position.y += 0.5f;
             instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            entity.position.x += 0.5f;
+        else if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            entity.position.y -= 0.5f;
             instance.transform.position = new Vector3(entity.position.x, entity.position.y, 0);
         }
     }
