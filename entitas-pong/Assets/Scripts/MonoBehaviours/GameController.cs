@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design.Serialization;
-using System.Runtime.Remoting.Contexts;
-using UnityEngine;
+﻿using UnityEngine;
 using Entitas;
 
 public class GameController : MonoBehaviour {
@@ -40,7 +38,7 @@ public class GameController : MonoBehaviour {
         //make a new hello world system
         _systems.Add(new HelloWorldSystem());
         _systems.Add(new InitializePlayerSystem(contexts));
-        _systems.Add(new InstantiateViewSystem(contexts));
+        _systems.Add(new UpdatePositionSystem(contexts));
 
         _systems.Initialize();
     }
@@ -60,10 +58,9 @@ public class GameController : MonoBehaviour {
             p2entity.velocity.vy -= 0.1f;
         }
 
-        p1entity.position.y += p1entity.velocity.vy;
-        p2entity.position.y += p2entity.velocity.vy;
-
         p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
         p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
+        
+        _systems.Execute();
     }
 }
