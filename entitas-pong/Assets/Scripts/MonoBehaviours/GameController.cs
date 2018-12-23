@@ -70,6 +70,7 @@ public class GameController : MonoBehaviour {
 
         p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
         p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
+        ballGameObj.transform.position = new Vector3(ballEntity.position.x, ballEntity.position.y, 0);
         
         _systems.Execute();
     }
