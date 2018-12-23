@@ -8,4 +8,5 @@ using Entitas.CodeGeneration.Attributes;
 public class GameSetup : ScriptableObject {
     public GameObject player1;
     public GameObject player2;
+    public GameObject ball;
 }
