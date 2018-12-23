@@ -19,20 +19,27 @@ public class GameController : MonoBehaviour {
         var contexts = Contexts.sharedInstance;
 
         p1entity = contexts.game.CreateEntity();
+        p1entity.AddResource(gameSetup.player1);
+        p1gameObj = Instantiate(p1entity.resource.prefab);
+        p1entity.AddPosition(p1gameObj.transform.position.x, 0);
+        p1entity.AddVelocity(0,0);
+        
         p2entity = contexts.game.CreateEntity();
+        p2entity.AddResource(gameSetup.player2);
+        p2gameObj = Instantiate(p2entity.resource.prefab);
+        p2entity.AddPosition(p2gameObj.transform.position.x, 0);
+        p2entity.AddVelocity(0,0);
+        
 
 
 
         contexts.game.SetGameSetup(gameSetup);
 
-        contexts.game.GetEntities()[0].AddResource(gameSetup.player1);
-        contexts.game.GetEntities()[1].AddResource(gameSetup.player2);
 
-        p1gameObj = Instantiate(contexts.game.GetEntities()[0].resource.prefab);
-        p2gameObj = Instantiate(contexts.game.GetEntities()[1].resource.prefab);
-        
-        p1entity.AddPosition(p1gameObj.transform.position.x, 0);
-        p2entity.AddPosition(p2gameObj.transform.position.x, 0);
+
+
+       
+       
 
 
         _systems = new Feature("Game");
@@ -54,6 +61,15 @@ public class GameController : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.DownArrow)) {
             p1entity.position.y -= 0.5f;
             p1gameObj.transform.position = new Vector3(p1entity.position.x, p1entity.position.y, 0);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.W)) {
+            p2entity.position.y += 0.5f;
+            p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.S)) {
+            p2entity.position.y -= 0.5f;
+            p2gameObj.transform.position = new Vector3(p2entity.position.x, p2entity.position.y, 0);
         }
     }
 }

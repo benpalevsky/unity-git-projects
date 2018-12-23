@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\Components\PlayerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PositionComponent.cs" />
     <Compile Include="Assets\Scripts\Components\ResourceComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\VelocityComponent.cs" />
     <Compile Include="Assets\Scripts\Components\ViewComponent.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\GameController.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GameSetup.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Sources\Generated\Game\Components\GamePlayerComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GamePositionComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameResourceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameVelocityComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\Components\GameViewComponent.cs" />
     <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
     <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />

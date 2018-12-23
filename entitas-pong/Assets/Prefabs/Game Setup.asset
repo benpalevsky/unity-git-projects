@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a17a9c1d7b2416db16ea7d87269e25f, type: 3}
   m_Name: Game Setup
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1706577838637192, guid: 88fce94cb953d40ea93ac243b94ff04d,
-    type: 2}
+  player1: {fileID: 1706577838637192, guid: 88fce94cb953d40ea93ac243b94ff04d, type: 2}
+  player2: {fileID: 1706577838637192, guid: b51a2b0cbdb2f4c129afe304cdab8bf3, type: 2}
